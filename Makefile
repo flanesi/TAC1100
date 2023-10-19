@@ -4,22 +4,22 @@ CFLAGS  = -O2 -Wall -g `pkg-config --cflags libmodbus`
 #LDFLAGS = -O2 -Wall -g -L/usr/local/lib -lmodbus
 LDFLAGS = -O2 -Wall -g `pkg-config --libs libmodbus`
 
-SDM = sdm120c
+TAC = TAC1100
 %.o: %.c
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-${SDM}: sdm120c.o 
-	$(CC) -o $@ sdm120c.o $(LDFLAGS)
-	chmod 4711 ${SDM}
+${TAC}: TAC1100.o 
+	$(CC) -o $@ TAC1100.o $(LDFLAGS)
+	chmod 4711 ${TAC}
 
 strip:
-	strip ${SDM}
+	strip ${TAC}
 
 clean:
-	rm -f *.o ${SDM}
+	rm -f *.o ${TAC}
 
-install: ${SDM}
-	install -m 4711 $(SDM) /usr/local/bin
+install: ${TAC}
+	install -m 4711 $(TAC) /usr/local/bin
 
 uninstall:
-	rm -f /usr/local/bin/$(SDM)
+	rm -f /usr/local/bin/$(TAC)
