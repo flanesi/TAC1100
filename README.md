@@ -26,10 +26,10 @@ To compile and install
   make clean && make install
 
 <PRE>
-Usage: TAC1100 [-a address] [-d] [-x] [-p] [-v] [-c] [-e] [-i] [-t] [-f] [-g] [-T] [[-m]|[-q]] [-b baud_rate] [-P parity] [-S bit] [-z num_retries] [-j seconds] [-w seconds] [-1 | -2] device
-       TAC1100 [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] [-1 | -2] -s new_address device
-       TAC1100 [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] [-1 | -2] -r baud_rate device 
-       TAC1100 [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] [-1 | -2] -R new_time device
+Usage: TAC1100 [-a address] [-d] [-x] [-p] [-v] [-c] [-e] [-i] [-t] [-f] [-g] [-T] [[-m]|[-q]] [-b baud_rate] [-P parity] [-S bit] [-z num_retries] [-j seconds] [-w seconds] device
+       TAC1100 [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] -s new_address device
+       TAC1100 [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] -r baud_rate device 
+       TAC1100 [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] -R new_time device
 
 where
     -a address     Meter number (between 1 and 247). Default: 1
