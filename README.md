@@ -15,10 +15,10 @@ To uninstall
   make uninstall
 
 <PRE>
-# SDM120C
-SDM120C ModBus RTU client to read EASTRON SDM120C smart mini power meter registers
+# TAC1100
+TAC1100 ModBus RTU client to read TAIYEDQ TAC1100 series smart mini power meter registers
 
-It works with SDM120C and SDM220 models
+It works with TAC1100 and TAC2100 models
 
 It depends on libmodbus (http://libmodbus.org)
 
