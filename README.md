@@ -1,5 +1,7 @@
-# SDM120C
-SDM120C ModBus RTU client to read EASTRON SDM smart mini power meter registers
+# TAC1100
+TAC1100 series ModBus RTU client to read TAIYEDQ smart mini power meter registers
+
+# NOT COMPLETE VERSION - UNDER DEVELOPMENT
 
 It depends on libmodbus (http://libmodbus.org)
 
