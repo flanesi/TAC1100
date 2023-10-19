@@ -26,10 +26,10 @@ To compile and install
   make clean && make install
 
 <PRE>
-Usage: sdm120c [-a address] [-d] [-x] [-p] [-v] [-c] [-e] [-i] [-t] [-f] [-g] [-T] [[-m]|[-q]] [-b baud_rate] [-P parity] [-S bit] [-z num_retries] [-j seconds] [-w seconds] [-1 | -2] device
-       sdm120c [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] [-1 | -2] -s new_address device
-       sdm120c [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] [-1 | -2] -r baud_rate device 
-       sdm120c [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] [-1 | -2] -R new_time device
+Usage: TAC1100 [-a address] [-d] [-x] [-p] [-v] [-c] [-e] [-i] [-t] [-f] [-g] [-T] [[-m]|[-q]] [-b baud_rate] [-P parity] [-S bit] [-z num_retries] [-j seconds] [-w seconds] [-1 | -2] device
+       TAC1100 [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] [-1 | -2] -s new_address device
+       TAC1100 [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] [-1 | -2] -r baud_rate device 
+       TAC1100 [-a address] [-d] [-b baud_rate] [-P parity] [-S bit] [-1 | -2] -R new_time device
 
 where
     -a address     Meter number (between 1 and 247). Default: 1
@@ -58,8 +58,6 @@ where
     -j 1/10 secs   Response timeout. Default: 2=0.2s
     -D 1/1000 secs Delay before sending commands (wait line set). Default: 30=0.03s
     -w seconds     Time to wait to lock serial port. (1-30s) Default: 0s
-    -1             Model: SDM120C (default)
-    -2             Model: SDM220
     device         Serial device, i.e. /dev/ttyUSB0
 
 Serial device is required. When no parameter is passed, retrives all values</PRE>
