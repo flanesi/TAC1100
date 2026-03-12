@@ -66,6 +66,7 @@ sudo make install
 
 ```bash
 # Clone the repository
+cd /home/pi
 git clone https://github.com/flanesi/TAC1100.git
 cd TAC1100
 
